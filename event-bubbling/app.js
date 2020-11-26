@@ -34,3 +34,6 @@ function deleteItem(event) {
   event.target.remove();
 }
 
+todoList.addEventListener('click', function() {
+  todoList.classList.toggle('spectacular');
+});

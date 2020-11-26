@@ -1,5 +1,5 @@
 .spectacular {
-  color: red;
+  opacity: 0;
 }
 
 /* add the transition directly to main-title so we dont lose it when we toggle on spectacular above */

@@ -39,3 +39,6 @@ todoList.appendChild(newItem);
 
 // NOTE: this item will NOT dynamically update, because querySelector items remain static, even when new elements or information is added dynamically
 todoNr.innerText = nodeItems.length;
+
+// NOTE: use .children to turn the nodeLists you retrieve from querySelector into an HTML collection, which WILL dynamically update
+const items = todoList.children;

@@ -30,10 +30,13 @@ for (item of items) {
 function deleteItem(event) {
   // when an event invokes a function, the first argument item passed in is the event itself
   console.log(event);
+  // this forces the event listener here to take priority over other event listeners activated through this event
+  event.stopPropagation();
   // this will remove the target element of the event from the DOM
   event.target.remove();
 }
 
+// NOTE: event bubbling occurs when multiple event listeners are activited from a single action
 todoList.addEventListener('click', function() {
   todoList.classList.toggle('spectacular');
 });

@@ -12,7 +12,7 @@ button.addEventListener('click', function() {
   console.log('thanks for clicking :)');
   const newItem = document.createElement('li');
   newItem.classList.add('item');
-  newItem.innerText = 'item 3';
+  newItem.innerText = `item ${items.length + 1}`;
 
   todoList.appendChild(newItem);
   todoNum.innerText = items.length;

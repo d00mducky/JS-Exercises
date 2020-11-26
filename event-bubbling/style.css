@@ -1,0 +1,8 @@
+.spectacular {
+  color: red;
+}
+
+/* add the transition directly to main-title so we dont lose it when we toggle on spectacular above */
+.main-title {
+  transition: all 1s ease-in-out;
+}

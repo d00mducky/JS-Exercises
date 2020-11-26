@@ -23,11 +23,18 @@ const mainTitle = document.querySelector('.main-title');
 //   todoNum.innerText = items.length;
 // });
 
-button.addEventListener('click', function() {
-  // adds the style in from our stylesheet
-  // mainTitle.classList.add('spectacular');
-  // adds or removes the style based off whether it already exists on the element
-  mainTitle.classList.toggle('spectacular');
+// button.addEventListener('click', function() {
+//   // adds the style in from our stylesheet
+//   // mainTitle.classList.add('spectacular');
+//   // adds or removes the style based off whether it already exists on the element
+//   mainTitle.classList.toggle('spectacular');
 
 
+// });
+button.addEventListener('keydown', function() {
+  // adds the style to the element only when the q button on the keyboard is pressed by the user
+  if (event.keyCode === 81) {
+    mainTitle.classList.toggle('spectacular');
+  }
 });
+

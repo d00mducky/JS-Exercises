@@ -1,7 +1,7 @@
 const button = document.querySelector('#submit');
 const todoList = document.querySelector('#todo-list');
 // select the bold tag within the H2 for showcasing the number of items dynamically
-const todoNum = document.querySelector('#todo-num b');
+const todoNum = document.querySelector('.todo-num b');
 // all of the children of todoNum and only the children elements
 const items = todoList.children;
 

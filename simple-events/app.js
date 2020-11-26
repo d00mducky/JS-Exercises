@@ -24,6 +24,10 @@ const mainTitle = document.querySelector('.main-title');
 // });
 
 button.addEventListener('click', function() {
-  mainTitle.style.color = 'red';
-  mainTitle.stlye.fontSize = '50px';
+  // adds the style in from our stylesheet
+  // mainTitle.classList.add('spectacular');
+  // adds or removes the style based off whether it already exists on the element
+  mainTitle.classList.toggle('spectacular');
+
+
 });

@@ -21,9 +21,10 @@ button.addEventListener('click', function(event) {
   newItem.innerText = nameInput.value;
   // appending to the todoList
   todoList.appendChild(newItem);
-
+  // set header to length of ul
   todoNum.innerText = items.length;
-
+  // reset placeholder text in the form
+  nameInput.value = '';
   // create the event listener
   newItem.addEventListener('click', deleteItem);
 

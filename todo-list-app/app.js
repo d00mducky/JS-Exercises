@@ -32,8 +32,8 @@ function addTodo(event) {
 
   // button to mark a todo item to be deleted
   const trashButton = document.createElement('button');
-  completedButton.innerHTML = '<i class="fas fa-check"></i>';
-  completedButton.classList.add('complete-btn');
+  trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+  trashButton.classList.add('trash-btn');
   todoDiv.appendChild(trashButton);
 
   // append to the DOM

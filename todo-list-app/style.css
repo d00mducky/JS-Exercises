@@ -33,3 +33,15 @@ form input, form button {
   border: none;
   background: whitesmoke;
 }
+
+form button {
+  color: #fda085;
+  background: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #fda085;
+  color: whitesmoke;
+}

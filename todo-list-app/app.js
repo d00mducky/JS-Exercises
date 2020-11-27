@@ -51,8 +51,12 @@ function deleteCheck(event) {
   if (item.classList[0] === 'trash-btn') {
     // grab the whole list item
     const todo = item.parentElement;
-    // then remove it from the DOM
-    todo.remove();
+    // animation for removal
+    todo.classList.add('fall');
+    // then remove it from the DOM after waiting for transitionend
+    todo.addEventListener('transitionend', function() {
+      todo.remove();
+    });
   }
 
   if(item.classList[0] === 'complete-btn') {

@@ -20,7 +20,7 @@ function addTodo(event) {
   // add the class
   newTodo.classList.add('todo-item');
   // add inner text to the list item
-  newTodo.innerText = 'hey';
+  newTodo.innerText = todoInput.value;
   // append to the div todo element
   todoDiv.appendChild(newTodo);
 

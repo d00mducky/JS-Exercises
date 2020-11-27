@@ -38,4 +38,6 @@ function addTodo(event) {
 
   // append to the DOM
   todoList.appendChild(todoDiv);
+  // clear the input text
+  todoInput.value = '';
 }

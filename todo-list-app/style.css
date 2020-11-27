@@ -1,51 +1,42 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  font-size: 62.5%;
-}
-
 body {
-  color: whitesmoke;
-  background-image: linear-gradient(120deg, #f6d365, #fda085);
-  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
-
 header {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-header, form {
+header,
+form {
   min-height: 20vh;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
-
-form input, form button {
+form input,
+form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
-  background: whitesmoke;
+  background: white;
 }
-
 form button {
-  color: #fda085;
-  background: whitesmoke;
+  color: #ff6f47;
+  background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 form button:hover {
-  background: #fda085;
-  color: whitesmoke;
+  background: #ff6f47;
+  color: white;
 }
-
 .todo-container {
   display: flex;
   justify-content: center;
@@ -59,85 +50,90 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-  background: whitesmoke;
-  color: black;
+  background: white;
   font-size: 1.5rem;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.25s ease;
+  transition: all 1s ease;
 }
-
+.filter-todo {
+  padding: 1rem;
+}
 .todo li {
   flex: 1;
 }
 
-.trash-btn, .complete-btn {
+.trash-btn,
+.complete-btn {
   background: #ff6f47;
-  color: whitesmoke;
+  color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
 }
-
 .complete-btn {
-  background: green;
+  background: rgb(11, 212, 162);
 }
-
 .todo-item {
-  padding: 0rem 1rem;
+  padding: 0rem 0.5rem;
 }
 
-/* unclickable items */
-.fa-trash, .fa-check {
+.fa-trash,
+.fa-check {
   pointer-events: none;
 }
 
-/* displays as a completed task */
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
 }
 
-.fall {
-  transform: translateY(8rem) rotateZ(20deg);
-  opacity: 0;
-}
-
+/*CUSTOM SELECTOR */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
-  outline: none;
-  border: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
 }
 
+/* Custom Select */
 .select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
 }
-
 select {
-  color: #fda085;
-  min-width: 20vh;
+  color: #ff6f47;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
-  padding: 1rem;
+  width: 12rem;
 }
-
+/* Arrow */
 .select::after {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
-  background: #fda085;
   top: 0;
   right: 0;
   padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
   pointer-events: none;
-  transition: all 0.25s ease;
 }
-
+/* Transition */
+/*
 .select:hover::after {
-  background: whitesmoke;
-  color: #fda085;
+  transform: scale(1.5);
 }
+*/
